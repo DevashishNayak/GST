@@ -10,9 +10,9 @@ currentMonth = datetime.now().month
 currentYear = datetime.now().year
 
 if currentMonth == 1:
-    invoicesLocation = 'C:/Users/devas.LAPTOP-5GL18CQ7/Documents/Unique Interiors/Invoices/20-21/12/'
+    invoicesLocation = 'D:/Documents/Unique Interiors/Invoices/21-22/12/'
 else:
-    invoicesLocation = 'C:/Users/devas.LAPTOP-5GL18CQ7/Documents/Unique Interiors/Invoices/20-21/' + str(currentMonth - 1) + '/'
+    invoicesLocation = 'D:/Documents/Unique Interiors/Invoices/21-22/' + str(currentMonth - 1) + '/'
 
 invoices = os.listdir(invoicesLocation)
 
@@ -73,10 +73,10 @@ mergeFormat = workbook.add_format({'bold': 1, 'border': 1, 'align': 'right'})
 worksheet = workbook.add_worksheet() 
 
 worksheet.set_column(0, 0, 5)
-worksheet.set_column(1, 1, 10)
+worksheet.set_column(1, 1, 11)
 worksheet.set_column(2, 2, 10)
-worksheet.set_column(3, 3, 30)
-worksheet.set_column(4, 4, 16)
+worksheet.set_column(3, 3, 31)
+worksheet.set_column(4, 4, 17)
 worksheet.set_column(5, 9, 10)
 worksheet.set_column(10, 10, 15)
 
